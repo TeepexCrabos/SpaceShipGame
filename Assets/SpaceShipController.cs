@@ -60,7 +60,7 @@ public class SpaceShipController : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        verticalInput = -Input.GetAxis("Vertical");
         rightStickHorizontalInput = Input.GetAxis("RightStickHorizontal");
 
         if (verticalInput >= 1)
